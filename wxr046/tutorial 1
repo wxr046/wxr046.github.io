@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content=width=device-width, initial-scale="1.0"
+    <title>tutorial 1</title>
+    <link rel=icon href=b18.jpg  type=image/jpg>
+    <style>
+           h1{
+            color:#1bc7d7;
+            font-family:monospace ;
+            font-size: 80px;;
+           }
+
+    </style>
+</head>
+
+<body 
+leftmargin="100px"
+topmargin="50px"
+align="center">
+        
+ <img src="img/Screenshot (185).png" type="png">
+ <img src="img/Screenshot (186).png" type="png">
+ <img src="img/Screenshot (187).png" type="png">
+
+    
+</body>
+
+</html>
