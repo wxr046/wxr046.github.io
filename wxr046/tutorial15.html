@@ -1,0 +1,67 @@
+<html>
+    <head>
+            <meta name="viewport" content=width=device-width,initial-scale=1.0>
+            <title>tutorial 15</title>
+            <link rel=icon href=https://cdn-icons-png.flaticon.com/512/79/79628.png  type=image/png>
+            <style>
+                    .s{
+                        text-shadow: 5px 5px 8px #00FF00;
+                    }
+
+                    .animate {
+                            width: 80px;
+                            height: 80px;
+                            background: steelblue;
+                            animation: iteratingAnimation 3s;
+                            animation-direction:alternate;
+                            animation-iteration-count: 4;
+                            }
+
+                            @keyframes iteratingAnimation {
+                                from { transform: none; }
+                                to { transform: translateX(300%) rotate(270deg); }
+                            }
+
+                    .u{
+                        text-transform: uppercase;
+                    }
+
+                    .v{
+                        visibility: visible;
+                    }
+
+                    .h{
+                        visibility: hidden;
+                    }
+
+            </style>
+    </head>
+
+    <body>
+        <input style="caret-color: green;"
+       placeholder="Student Id">
+
+        <h1 class="s">This is text-shadow</h1>
+        <br>
+        
+        <h1 class="u">This text displays in capital letters</h1>
+        <br>
+        
+        <div class="animation"></div>
+
+        <br>
+
+        <table>
+            <tr>
+                <td class="v">Find the hidden link</td>
+                <td rowspan="3" class="h">
+                    <a href="tutorial11.html"></a>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+        </table>
+
+    </body>
+
+</html>
