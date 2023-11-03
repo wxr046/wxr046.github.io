@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Percy Jackson and the Olympians</title>
+    <meta name="viewport" content=width=device-width ,initial scale="1.0" >
+    <link rel=icon href=https://i.pinimg.com/originals/cb/d0/79/cbd079ce3bf1f14008b5f0fe060f1ecd.png type=image/png>
+    <style>
+        table{
+            width: 50%;
+            height:50%;
+            text-align: center ;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table,th,td{
+            border:1px solid black;
+            border-collapse:collapse
+        }
+
+        td,th{
+            padding:5px;
+        }
+
+        button{
+            background-color: white;
+        }
+
+        body{
+            
+            background-repeat: no-repeat;
+            background-size:200px 100px ;
+            background-position:2% 20% ;
+        }
+        
+    </style>
+</head>
+
+<body bgcolor="#f2ebd9" link="black" alink="green" vlink="grey"
+background="https://static.wikia.nocookie.net/disney/images/6/6b/Percy_Jackson_cropped_logo.png/revision/latest?cb=20230818190542">
+    <center>
+    <h1>List of Percy Jackson and the Olympians</h1>
+    <h2>Author: <a href="https://rickriordan.com/">Rick Riordan</a></h2>
+
+    <br>
+    <button onclick="loadxml()">Click to view the list</button>
+    </center>
+
+    
+
+    <br><br><br>
+    <table id="table"></table>
+
+    <script>
+        function loadxml() {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    mytable(this);
+                }
+            };
+
+            xhttp.open("GET", "PercyJackson.xml", true);
+            xhttp.send();
+        }
+
+        function mytable(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>No</th><th>Title</th><th>Years</th><th>ISBN</th></tr>";
+            var x = xmlDoc.getElementsByTagName("books");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                x[i].getElementsByTagName("no")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("years")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("ISBN")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+            document.getElementById("table").innerHTML = table;
+        }
+    </script>
+</body>
+</html>
