@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PercyJackson>
+
+    <books>
+        <no>01</no>
+        <name>The Lightning Thief</name>
+        <years>2005</years>
+        <ISBN>0-7868-5629-7</ISBN>
+    </books>
+
+    <books>
+        <no>02</no>
+        <name>The Sea of Monsters</name>
+        <years>2006</years>
+        <ISBN>0-7868-5686-6</ISBN>
+    </books>
+
+    <books>
+        <no>03</no>
+        <name>The Titan's Curse</name>
+        <years>2007</years>
+        <ISBN>978-1-4231-0145-1</ISBN>
+    </books>
+
+    <books>
+        <no>04</no>
+        <name>The Battle of the Labyrinth</name>
+        <years>2008</years>
+        <ISBN>9781423101468</ISBN>
+    </books>
+
+    <books>
+        <no>05</no>
+        <name>The Last Olympian</name>
+        <years>2009</years>
+        <ISBN>978-1-4231-0147-5</ISBN>
+    </books>
+
+    <books>
+        <no>06</no>
+        <name>The Chalice of the Gods</name>
+        <years>2023</years>
+        <ISBN>9781368098175</ISBN>
+    </books>
+
+    <books>
+        <no>07</no>
+        <name>Wrath of the Triple Goddess</name>
+        <years>2024</years>
+        <ISBN>-</ISBN>
+    </books>
+
+    <books>
+        <no>08</no>
+        <name>The Demigod Files</name>
+        <years>2009</years>
+        <ISBN>1-4231-2166-X</ISBN>
+    </books>
+
+    <books>
+        <no>09</no>
+        <name>The Ultimate Guide</name>
+        <years>2010</years>
+        <ISBN>978-1423121718 </ISBN>
+    </books>
+
+    <books>
+        <no>10</no>
+        <name>Percy Jackson and the Singer of Apollo</name>
+        <years>2013</years>
+        <ISBN>9780062289636</ISBN>
+    </books>
+
+    <books>
+        <no>11</no>
+        <name>Percy Jackson's Greek Gods</name>
+        <years>2014</years>
+        <ISBN>978-1423183648</ISBN>
+    </books>
+
+    <books>
+        <no>12</no>
+        <name>Percy Jackson's Greek Heroes</name>
+        <years>2015</years>
+        <ISBN>978-1423183655</ISBN>
+    </books>
+
+    <books>
+        <no>13</no>
+        <name>Camp Half-Blood Confidential</name>
+        <years>2017</years>
+        <ISBN>9780141377698 </ISBN>
+    </books>
+
+
+
+</PercyJackson>
