@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>tutorial 17</title>
+        <link rel=icon href=sunflower.jpg type=image/jpg>
+        <meta name=viewport content=width=device-width, initial-scale=1.0>
+        <style>
+            p{
+                color:#696969;
+                font-family:verdana;
+                font-size:160%;
+                margin-left: 20%;
+                width:100%;
+                height:100%;
+            }
+            .a{
+                float:left;
+            }
+            .b{
+                float:right;
+            }
+            .c{
+                display:flex;
+                
+                background-color:#b0e0e6;
+            }
+            h2{
+                border:1px solid grey ;
+                background-color: #f1f1f1;  
+                color:#696969;
+                font-family:verdana;
+                font-size:160%;     
+                
+            }
+            .ad{
+                padding:10%;
+            }
+            
+        
+        </style>
+    </head>
+
+    <body topmargin=50>
+        <h1 align="center">Personal details:</h1>
+        <div class="c">  
+            
+            <div class="a">
+                <h2>First Name:</h2>
+
+                <h2>Last Name:</h2>
+
+                <h2>Gender:</h2>
+                    
+                <h2 class="ad">Choose your favorite subjects:</h2>
+                    
+                <h2 class="ad">Address:</h2>
+                    
+                <h2>Date of birth:</h2>
+                    
+                <h2>Login password:</h2>
+                    
+                <h2>Course:</h2>
+                    
+            
+                </p>
+            </div>
+            
+            <div class="b">
+                <form >  
+                    <p>
+                        
+                        <input type=text name=fname> 
+                        <br><br>
+    
+                         <input type=text name=lname> 
+                        <br><br>
+                        
+                        <input type = radio name = gender value = Male> Male
+                        <input type = radio name = gender value = Female> Female
+                        <br><br>
+                        
+                        <input type=checkbox name=fav_sub value=DCS4103>DCS4103<br>
+                        <input type=checkbox name=fav_sub value=DCS3003>DCS3003<br>
+                        <input type=checkbox name=fav_sub value=MST1003>MST1003<br>
+                        <input type=checkbox name=fav_sub value=MST2003>MST2003<br>
+                        
+                        <br><br>
+                        <textarea rows=4 cols=30 name=address></textarea>
+                        <br><br><br>
+                        
+                        <input type=date name=dob>
+                        <br><br>
+                        
+                        <input type=password name=loginpass>
+                        <br><br>
+                        
+                        <select>
+                        <option value="0">- List of Courses -</option>
+                        
+                        <optgroup label="Diploma In Computer Science">
+                        <option value="DCS_S1">Semester 1</option>
+                        <option value="DCS_S2">Semester 2</option>
+                        <option value="DCS_S3">Semester 3</option>
+                        <option value="DCS_S4">Semester 4</option>
+                        <option value="DCS_S5">Semester 5</option>
+                        <option value="DCS_S6">Semester 6</option>
+                        </optgroup>
+                        
+                        <option value="DIB">Diploma In Bussiness</option>
+                        <option value="DAS">Diploma In Airline Services</option>
+                        </select>
+                        
+                    </p>
+                    <center>
+                        <input type=submit value=Submit>
+                        <input type=reset value=Reset>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <br>
+        
+    </body>
+</html>
