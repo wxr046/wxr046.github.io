@@ -1,0 +1,325 @@
+<html>
+    <head>
+        <title>CD</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/79/79628.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: #3f3f3f;
+            }
+            header {
+                    background-color: #f1f1f1; 
+                    color: #3f3f3f; 
+                    height:10%; 
+                    padding:2%;
+                    margin-left: auto;
+                    margin-right: auto;
+                
+            }
+
+            header a:hover {
+                    background-color: aquamarine; 
+                    color: #f1f1f1; 
+            }
+            header a {
+                    display: inline-block;
+                    background-color: #f1f1f1;
+                    color: #3f3f3f; 
+                    padding:1% 2%; 
+                    text-decoration: none;
+                    border-radius: 10px; 
+                    font-weight: bold;
+                
+            }  
+
+            footer{
+                background-color: #f1f1f1; 
+                color: #3f3f3f; 
+                padding: 5%; 
+            }
+            .img {
+                width: 33%;
+                
+            }
+            .img2{
+                width:16%;
+            }
+            .cart {
+                display: none;
+                background-color: transparent;
+                border: none;
+                width: 5%;
+                height: 5%;
+            }
+
+            .cart:hover {
+                display: inline-block;
+            }
+            table{
+                color:white;
+                margin-left: 20%;
+            }
+            td{
+                padding-bottom: 10%;
+            }
+            h1{
+                font-family:cursive;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="main.html">Home</a>
+            <h1 align="center">CD</h1>  
+        </header>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img class="img" src="https://store.warnermusic.ca/cdn/shop/products/wmcstore2023_product_template_bd4533d0-7c28-4b67-bffa-9b53d4cf2bca.jpg?v=1699476228&width=720" alt="Image 1" onclick="showButtons('cart1')" ondblclick="hideButtons('cart1')">
+                    <button id="cart1" class="cart" onclick="addToCart('Item 1')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>RELIGIOUSLY</h3>
+                    Artist: &nbsp;
+                     <br>
+                    RM 60.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>Religiously</li>
+                            <li>Warzone</li>
+                            <li>Fix'n To Break</li>
+                            <li>Forget About You</li>
+                            <li>Chase Her</li>
+                            <li>Fall In Love</li>
+                            <li>You Don't Want That Smoke</li>
+                            <li>Found Your Love</li>
+                            <li>Rock and A Hard Place</li>    
+                            <li>Other Side Of Lettin' Go</li>
+                            <li>Pain Won't Last</li>
+                            <li>Where It Ends</li>
+                            <li>God's Gonna Cut You Down</li>
+                            <li>Fadeaway</li>
+                            <li>Get To Gettin' Gone</li>
+                            <li>Is This Really Over?</li>
+                        </ol>
+                    </ul>
+                </td>
+
+                <td>
+                    <img class="img" src="https://down-my.img.susercontent.com/file/sg-11134201-7rbkf-ll4t8wrnpmnv77" alt="Image 2" onclick="showButtons('cart2')" ondblclick="hideButtons('cart2')">
+                    <button id="cart2" class="cart" onclick="addToCart('Item 2')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>EXPECTATION (Version A)</h3>
+                    Artist: &nbsp;D.O.
+                     <br>
+                    RM 80.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>Somebody</li>
+                            <li>기적 (Wonder)</li>
+                            <li>별 떨어진다 (I Do)</li>
+                            <li>Lost</li>
+                            <li>내일의 우리 (Ordinary Days)</li>
+                            <li>The View</li>
+                            <li>Lost (Acoustic Ver.)</li>
+                        </ol>
+                    </ul>
+                </td>
+                
+                <td>
+                    <img class="img" src="https://m.media-amazon.com/images/I/51bq6Kz2gkL._SY200_QL15_.jpg" alt="Image 3" onclick="showButtons('cart3')" ondblclick="hideButtons('cart3')">
+                    <button id="cart3" class="cart" onclick="addToCart('Item 3')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>GREY SUIT</h3>
+                    Artist: &nbsp;Suho
+                     <br>
+                    RM 120.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>Morning Star</li>
+                            <li>Grey Suit</li>
+                            <li>Hurdle</li>
+                            <li>Decanting</li>
+                            <li>Bear Hug</li>
+                            <li>Moment</li>
+                        </ol>
+                    </ul>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <img class="img" src="https://www.sputnikmusic.com/images/albums/459389.jpg" alt="Image 4" onclick="showButtons('cart4')" ondblclick="hideButtons('cart4')">
+                    <button id="cart4" class="cart" onclick="addToCart('Item 4')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>The Clod</h3>
+                    Artist: &nbsp;No Party for Cao Dong
+                     <br>
+                    RM 68.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>苦鸡精算师</li>
+                            <li>缸</li>
+                            <li>空</li>
+                            <li>人洞山</li>
+                            <li>孑</li>
+                            <li>白日梦</li>
+                            <li>床</li>
+                            <li>八</li>
+                            <li>老张</li>    
+                            <li>芽</li>
+                            <li>但</li>
+                            
+                        </ol>
+                    </ul>
+                </td>
+
+                <td  class="img">
+                    <img class="img" src="https://down-my.img.susercontent.com/file/my-11134207-7quky-lftmw4tinoh646" alt="Image 5" onclick="showButtons('cart5')" ondblclick="hideButtons('cart5')">
+                    <button id="cart5" class="cart" onclick="addToCart('Item 5')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>嘉宾</h3>
+                    Artist: &nbsp;张远
+                     <br>
+                    RM 200.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>嘉宾</li>
+                            <li>有生之年</li>
+                            <li>换季</li>
+                            <li>陌路重逢</li>
+                            <li>仰望星云</li>
+                            <li>嘉宾（粤语版）</li>
+                            <li>南方秋野，北方春茶</li>
+                            <li>忙着失恋</li>
+                            <li>几句</li>    
+                            <li>听风说</li>
+                        </ol>
+                    </ul>
+                </td>
+                
+                <td>
+                    <img class="img" src="https://down-my.img.susercontent.com/file/my-11134207-7r990-ln7cacolforff1" alt="Image 6" onclick="showButtons('cart6')" ondblclick="hideButtons('cart6')">
+                    <button id="cart6" class="cart" onclick="addToCart('Item 6')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>Dreams</h3>
+                    Artist: &nbsp; 檀健次 <br>
+                    RM 150.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>
+                            <li>Intro: Dream Away 觉</li>
+                            <li>着迷 Be Fascinated</li>
+                            <li>一念无明 Darkness</li>
+                            <li>梦境 Scene in a Dream</li>
+                            <li>IMMA GET IT 无人替代</li>
+                            <li>枷锁 Dilemma</li>
+                            <li>路过，人间烟火 Memory's Rivulets</li>
+                            <li>IMMA GET IT(KAKA Remix)</li>
+                            <li>Outro: Back to Reality 醒</li>
+                            
+                        </ol>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                
+            </tr>
+
+        </table>
+        
+        <table>
+            <tr>
+                <td>
+                    
+                    <img class="img2" src="https://down-my.img.susercontent.com/file/my-11134207-7r992-llnr34wyh1ei11" alt="Image 7" onclick="showButtons('cart7')" ondblclick="hideButtons('cart7')">
+                    <button id="cart7" class="cart" onclick="addToCart('Item 7')"><abbr title="Add to Shopping Cart">Cart</abbr></button> <br>
+                    <h3>Allen Su</h3>
+                    Artist: &nbsp; 浮生若梦<br>
+                    RM 230.00 <br>
+                    Tracklist:
+                    <table>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>CD 1 (BEATS): </li> 
+                                    <ol>
+                                        <li>北京City Beijing City</li>
+                                        <li>适者生存 Survival</li>
+                                        <li>Stand Up Again</li>
+                                        <li>Dream</li>
+                                        <li>Splitman</li>
+                                        <li>The Break</li>
+                                        <li>洋货 External</li>
+                                        <li>选秀明星 Competition Star</li>
+                                        <li>分裂 Split</li>
+                                        <li>心世界 New World</li>
+                                        <li>我不是歌手 Not A Singer</li>
+                                        <li>兄弟 Brother</li>
+                                        <li>Back Home</li>
+                                        <li>星座女郎 Star Sign Girls</li>
+                                        <li>Real Time 2020</li>
+                                    </ol>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>CD 2 (MELODY): </li> 
+                                    <ol>
+                                        <li>怕爱 Love No More</li>
+                                        <li>英雄 Hero</li>
+                                        <li>秋天 Autumn</li>
+                                        <li>下次再玩 See You Next Time</li>
+                                        <li>身旁 I'll Be There For You</li>
+                                        <li>找个人 Someone</li>
+                                        <li>学会爱 To Love</li>
+                                        <li>醒来说 Wake Up To Talk</li>
+                                        <li>Miss Pretty</li>
+                                        <li>想念式 Missing You</li>
+                                        <li>光 The Light</li>
+                                        <li>回忆失踪 Missing Memory</li>
+                                        <li>更远的地方 Somewhere Further</li>
+                                        <li>Falling In Love</li>
+                                        <li>晚安亲爱的 Good Night Baby</li>
+                                    </ol>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    
+                    
+                </td>
+            </tr>
+        </table>
+
+        <footer>
+            <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+            <h3>Our Email: <a href="mailto:2004wxr@gmail.com">Email</a></h3>
+        </footer>
+
+        <script>
+            function showButtons(cartId) {
+            document.getElementById(cartId).style.display = "inline-block";
+        }
+
+        function hideButtons(cartId) {
+            document.getElementById(cartId).style.display = "none";
+        }
+
+        function addToCart(itemName) {
+            // Add your logic for adding to the shopping cart here
+            alert("Item '" + itemName + "' added to cart!");
+        }
+
+
+        </script>
+
+    </body>
+</html>
