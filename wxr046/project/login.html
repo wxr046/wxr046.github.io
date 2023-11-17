@@ -82,21 +82,21 @@
                 
                 <tr>
                     <td>Email:</td>
-                    <td><input type="email" name="email"></td>
+                    <td><input id="email" type="email" name="email"></td>
 
                 </tr>
     
                 <tr>
                     <td>Login password:</td>
-                    <td><input type="password" name="loginpass"></td>
+                    <td><input id="pass" type="password" name="loginpass"></td>
                 </tr>
         
             </table>
             <br>
             <center>
-                <input type="submit" value="Login" class="button"><br>
+                <input id="login" type="submit" value="Login" class="button"><br>
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input id="re" type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
             </center>
         </p>  
@@ -112,6 +112,21 @@
             <h4>Email: &nbsp;<a href="mailto:2004wxr@gmail.com">2004wxr@gmail.com</a></h4>
             <h4>WhatsApp: &nbsp;+6011-374 5526</h4>
         </footer>
+
+        <script>
+            const response = confirm("Click OK to fill in the form .");
+            
+            console.log(response); 
+            
+            if (response) {
+            
+            } else {
+            document.getElementById("email").disabled = true;
+            document.getElementById("pass").disabled = true;
+            document.getElementById("login").disabled = true;
+            document.getElementById("re").disabled = true;
+            }
+        </script>
         
     </body>
 </html>
