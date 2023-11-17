@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>vinyl</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/79/79628.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: #f1f1f1;
+            }
+            header {
+                    background-color: #3f3f3f; 
+                    color: #f1f1f1; 
+                    height:10%; 
+                    padding:2%;
+                    margin-left: auto;
+                    margin-right: auto;
+                
+            }
+
+            header a:hover, footer a:hover {
+                    background-color: white; 
+                    color: #3f3f3f; 
+            }
+            header a, footer a{
+                    display: inline-block;
+                    background-color: #3f3f3f;
+                    color: #f1f1f1; 
+                    padding:1% 2%; 
+                    text-decoration: none;
+                    border-radius: 10px; 
+                    font-weight: bold;
+                
+            }  
+            .acc{
+                color:#3f3f3f;
+                text-decoration:overline;
+            }
+
+            footer{
+                background-color: #3f3f3f; 
+                color: #f1f1f1; 
+                padding: 2%; 
+            }
+            table{
+                background-color: white;
+                font-weight: bolder;
+                font-style: italic;
+                font-size: large;
+                line-height:1.5cm;
+                width: 80%;
+            }
+            table,td{
+                border: #3f3f3f solid 2px;
+                border-spacing:0px;
+            }
+            h1{
+                font-family:cursive;
+            }
+            .button{
+                width:10%;
+                height: 5%;
+                background-color: white;
+                border-radius: 10px;
+            }
+            .button:hover{
+                background-color: aquamarine;
+                color:white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="main.html">Home</a>
+            <h1 align="center">Login</h1>
+        </header>
+        <br><br>
+        <form action="main.html">   
+            <table align="center">
+                
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+
+                </tr>
+    
+                <tr>
+                    <td>Login password:</td>
+                    <td><input type="password" name="loginpass"></td>
+                </tr>
+        
+            </table>
+            <br>
+            <center>
+                <input type="submit" value="Login" class="button">
+            </center>
+        </p>  
+        </form>
+        <center>
+        <a  class="acc"  href="signup.html">Create New Account</a>
+        </center>
+        <br><br>
+        <footer>
+            <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+            <h3>Our Email: <a href="mailto:2004wxr@gmail.com">Email</a></h3>
+        </footer>
+    </body>
+</html>
