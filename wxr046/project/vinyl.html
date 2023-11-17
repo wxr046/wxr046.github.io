@@ -1,0 +1,253 @@
+<html>
+    <head>
+        <title>vinyl</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/79/79628.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: #3f3f3f;
+            }
+            header {
+                    background-color: #f1f1f1; 
+                    color: #3f3f3f; 
+                    height:10%; 
+                    padding:2%;
+                    margin-left: auto;
+                    margin-right: auto;
+                
+            }
+
+            header a:hover {
+                    background-color: aquamarine; 
+                    color: #f1f1f1; 
+            }
+            header a {
+                    display: inline-block;
+                    background-color: #f1f1f1;
+                    color: #3f3f3f; 
+                    padding:1% 2%; 
+                    text-decoration: none;
+                    border-radius: 10px; 
+                    font-weight: bold;
+                
+            }  
+
+            footer{
+                background-color: #f1f1f1; 
+                color: #3f3f3f; 
+                padding: 5%; 
+            }
+            .img {
+                width: 50%;
+                
+            }
+            .cart {
+                display: none;
+                background-color: transparent;
+                border: none;
+                width: 5%;
+                height: 5%;
+            }
+
+            .cart:hover {
+                display: inline-block;
+            }
+            table{
+                color:white;
+                
+            }
+            td{
+                padding-bottom: 10%;
+            }
+            h1{
+                font-family:cursive;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="main.html">Home</a>
+            <h1 align="center">Vinyl</h1>  
+        </header>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <td  class="img">
+                    <img class="img" src="https://p3-aio.ecombdimg.com/obj/temai/16f20d851ae786183750fbb50e01e12dwww800-800" alt="Image 1" onclick="showButtons('cart1')" ondblclick="hideButtons('cart1')">
+                    <button id="cart1" class="cart" onclick="addToCart('Item 1')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+                
+                <td><h3>涂鸦森林</h3>
+                    Artist: &nbsp;陈楚生
+                     <br>
+                    RM 200.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>我等待的</li>
+                            <li>隔壁阿丑</li>
+                            <li>我的世界</li>
+                            <li>D夫人</li>
+                            <li>晓得</li>
+                            <li>出厂日期</li>
+                            <li>打印人生</li>
+                            <li>晚礼服</li>
+                            <li>我的衣裳</li>    
+                            <li>白石洲</li>
+                        </ol>
+                    </ul>
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img class="img" src="https://therecordhub.com/cdn/shop/products/NEWHOPECLUNEWHOPECLU_1024x1024.png?v=1595512528" alt="Image 2" onclick="showButtons('cart2')" ondblclick="hideButtons('cart2')">
+                    <button id="cart2" class="cart" onclick="addToCart('Item 2')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>New Hope Club</h3>
+                    Artist: &nbsp;New Hope Club <br>
+                    RM 100.00
+                    <ul type="disc">
+                        <li>Tracklist: </li> 
+                        <ol>
+                            <li>Love Again</li>
+                            <li>Let Me Down Slow (with R3HAB)</li>
+                            <li>RKnow Me Too Well (with Danna Paola)</li>
+                            <li>Permission</li>
+                            <li>Fixed</li>
+                            <li>Medicine</li>
+                            <li>Give Me Time</li>
+                            <li>Serious</li>
+                            <li>Crazy</li>
+                            <li>Let Me Down Slow - Original Mix</li>
+                            <li>You And I</li>
+                            <li>Why Oh Why</li>
+                            <li>Karma</li>
+    
+                        </ol>
+                    </ul>
+                </td>
+                
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <img class="img" src="https://thesoundofvinyl.us/cdn/shop/files/SOS_700x700.png?v=1686161725" alt="Image 3" onclick="showButtons('cart3')" ondblclick="hideButtons('cart3')">
+                    <button id="cart3" class="cart" onclick="addToCart('Item 3')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>SZA-SOS (BD)</h3>
+                    Artist: &nbsp;SZA
+                     <br>
+                    RM 165.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ol>  
+                            <li>Sos</li>
+                            <li>Kill Bill</li>
+                            <li>Seek & Destroy</li>
+                            <li>Low</li>
+                            <li>Love Language</li>
+                            <li>Blind</li>
+                            <li>Used (Ft. Don Toliver)</li>
+                            <li>Snooze</li>
+                            <li>Notice Me</li>  
+                            <li>Gone Girl</li> 
+                            <li>Smoking On My Ex Pack</li>
+                            <li>Ghost In the Machine (Ft. Phoebe Bridgers)</li>
+                            <li>F2f</li>
+                            <li>Nobody Gets Me</li>
+                            <li>Conceited</li>
+                            <li>Special</li>
+                            <li>Too Late</li>
+                            <li>Far</li>
+                            <li>Shirt</li>  
+                            <li>Open Arms (Ft. Travis Scott)</li>  
+                            <li>I Hate U</li> 
+                            <li>Good Days</li> 
+                            <li>Forgiveless (Ft. Ol' Dirty Bastard)</li>  
+                        </ol>
+                    </ul>
+                    
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <img class="img" src="https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/1/small_image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/9/7/4710149695154.jpg" alt="Image 4" onclick="showButtons('cart4')" ondblclick="hideButtons('cart4')">
+                    <button id="cart4" class="cart" onclick="addToCart('Item 4')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>The Best Of Leslie Cheung</h3>
+                    Artist: &nbsp;Leslie Cheung
+                     <br>
+                    RM 370.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ul type="circle">
+                            <li>Side A</li>
+                            <ol>
+                                <li>マシュマロ</li>
+                                <li>追</li>
+                                <li>紅</li>
+                                <li>夜半歌聲 (電影版)</li>
+                                <li>今生今世</li>
+                                <li>偷情</li>
+                            </ol>  
+                            <li>Side B</li>
+                            <ol>
+                                <li>有心人</li>
+                                <li>這些年來</li>
+                                <li>永遠記得</li>
+                                <li>Twist & Shout</li>
+                                <li>當愛已成往事</li>
+                                <li>紅顏白髮</li>
+                                <li>Everybody</li>
+                            </ol>  
+                        </ul>
+                    </ul>
+                    
+                </td>
+                </td>
+            </tr>
+            
+
+
+        </table>
+
+        <footer>
+            <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+            <h3>Our Email: <a href="mailto:2004wxr@gmail.com">Email</a></h3>
+        </footer>
+
+        <script>
+            function showButtons(cartId) {
+            document.getElementById(cartId).style.display = "inline-block";
+        }
+
+        function hideButtons(cartId) {
+            document.getElementById(cartId).style.display = "none";
+        }
+
+        function addToCart(itemName) {
+            // Add your logic for adding to the shopping cart here
+            alert("Item '" + itemName + "' added to cart!");
+        }
+
+
+        </script>
+
+    </body>
+</html>
