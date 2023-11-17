@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Cassette</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/79/79628.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #3f3f3f;
+            }
+            header {
+                    background-color: #f1f1f1; 
+                    color: #3f3f3f; 
+                    height:10%; 
+                    padding:2%;
+                    margin-left: auto;
+                    margin-right: auto;
+                
+            }
+
+            header a:hover {
+                    background-color: aquamarine; 
+                    color: #f1f1f1; 
+            }
+            header a {
+                    display: inline-block;
+                    background-color: #f1f1f1;
+                    color: #3f3f3f; 
+                    padding:1% 2%; 
+                    text-decoration: none;
+                    border-radius: 10px; 
+                    font-weight: bold;
+                
+            }  
+
+            footer{
+                background-color: #f1f1f1; 
+                color: #3f3f3f; 
+                padding: 5%; 
+            }
+            .img {
+                width: 50%;
+                
+            }
+            .cart {
+                display: none;
+                background-color: transparent;
+                border: none;
+                width: 5%;
+                height: 5%;
+            }
+
+            .cart:hover {
+                display: inline-block;
+            }
+            table{
+                color:white;
+                
+            }
+            td{
+                padding-bottom: 10%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="main.html">Home</a>
+            <h1 align="center">Cassette</h1>  
+        </header>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <td  class="img">
+                    <img class="img" src="https://www.5sosstore.com/cdn/shop/products/xGnafxeFFQcopy.png?v=1651604305" alt="Image 1" onclick="showButtons('cart1')" ondblclick="hideButtons('cart1')">
+                    <button id="cart1" class="cart" onclick="addToCart('Item 1')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+                
+                <td><h3>5SOS5 CASSETTE TAPE </h3>
+                    5 Seconds Of Summer <br>
+                    RM 70.00
+                    <ul type="disc">
+                        <li>Tracklist: </li> 
+                        <ol>
+                            <li>COMPLETE MESS</li>
+                            <li>Easy For You To Say</li>
+                            <li>Bad Omens</li>
+                            <li>Me Myself & I</li>
+                            <li>Take My Hand</li>
+                            <li>CAROUSEL</li>
+                            <li>Older</li>
+                            <li>HAZE</li>
+                            <li>You Don't Go To Parties</li>
+                            <li>BLENDER</li>
+                            <li>Caramel</li>
+                            <li>Best Friends</li>
+                            <li>Bleach</li>
+                            <li>Red Lines</li>
+    
+                        </ol>
+                    </ul>
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img class="img" src="https://store.paramore.net/dw/image/v2/BHCC_PRD/on/demandware.static/-/Sites-warner-master/default/dw4a699be3/pdp-img/PARAMORE/ProductImages-14_Cassette.png?sw=550&sh=550&sm=fit" alt="Image 2" onclick="showButtons('cart2')" ondblclick="hideButtons('cart2')">
+                    <button id="cart2" class="cart" onclick="addToCart('Item 2')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>This Is Why Cassette </h3>
+                    Paramore <br>
+                    RM 90.00
+                    <ul type="disc">
+                        <li>Tracklist: </li> 
+                        <ol>
+                            <li>This Is Why</li>
+                            <li>The News</li>
+                            <li>Running Out of Time</li>
+                            <li>C'est Comme Ça</li>
+                            <li>Big Man, Little Dignity</li>
+                            <li>You First</li>
+                            <li>Figure 8</li>
+                            <li>Liar</li>
+                            <li>Crave</li>
+                            <li>Thick Skull</li>
+    
+                        </ol>
+                    </ul>
+                </td>
+                
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <img class="img" src="https://gnrmerch.com/cdn/shop/products/CASSETTE.png?v=1644422376" alt="Image 3" onclick="showButtons('cart3')" ondblclick="hideButtons('cart3')">
+                    <button id="cart3" class="cart" onclick="addToCart('Item 3')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>HARD SKOOL CASSETTE</h3> 
+                    Guns N' Roses <br>
+                    RM 85.00
+                    <ul>
+                        <li>Tracklist: </li> 
+                        <ul type="circle">
+                            <li>Side A</li>
+                            <ol>
+                                <li>Hard Skool</li>
+                                <li>Absurd</li>
+                            </ol>  
+                            <li>Side B</li>
+                            <ol>
+                                <li>Don't Cry (Live)</li>
+                                <li>You're Crazy (Live)</li>
+                            </ol>  
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <img class="img" src="https://m.media-amazon.com/images/I/816YKBH0JJL._SL1500_.jpg" alt="Image 4" onclick="showButtons('cart4')" ondblclick="hideButtons('cart4')">
+                    <button id="cart4" class="cart" onclick="addToCart('Item 4')"><abbr title="Add to Shopping Cart">Cart</abbr></button>
+                </td>
+
+                <td><h3>The Sick, The Dying... And The Dead! </h3>
+                    Megadeth <br>
+                    RM 90.00
+                    <ul type="disc">
+                        <li>Tracklist: </li> 
+                        <ol>
+                            <li>The Sick, The Dying... And The Dead!</li>
+                            <li>Life In Hell</li>
+                            <li>Night Stalkers</li>
+                            <li>Dogs Of Chernobyl</li>
+                            <li>Sacrifice</li>
+                            <li>Junkie</li>
+                            <li>Psychopathy	</li>
+                            <li>Killing Time</li>
+                            <li>Soldier On!</li>
+                            <li>Célebutante</li>
+                            <li>Mission To Mars</li>
+                            <li>We'll Be Back</li>
+                        </ol>
+                    </ul>
+                </td>
+            </tr>
+            
+
+
+        </table>
+
+        <footer>
+            <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+            <h3>Our Email: <a href="mailto:2004wxr@gmail.com">Email</a></h3>
+        </footer>
+
+        <script>
+            function showButtons(cartId) {
+            document.getElementById(cartId).style.display = "inline-block";
+        }
+
+        function hideButtons(cartId) {
+            document.getElementById(cartId).style.display = "none";
+        }
+
+        function addToCart(itemName) {
+            // Add your logic for adding to the shopping cart here
+            alert("Item '" + itemName + "' added to cart!");
+        }
+
+
+        </script>
+
+    </body>
+</html>
