@@ -96,46 +96,46 @@
     
                 <tr>
                     <td>First Name:</td>
-                    <td><input type="text" name="fname"></td>
+                    <td><input id="f" type="text" name="fname"></td>
                 </tr>
     
                 <tr>
                     <td>Last Name:</td>
-                    <td><input type="text" name="iname"></td>
+                    <td><input id="l" type="text" name="lname"></td>
                 </tr>
                     <td>Email:</td>
-                    <td><input type="emailS" name="email"></td>
+                    <td><input id="e" type="emailS" name="email"></td>
                 <tr>
 
                 </tr>
 
                 <tr>
                     <td>Gender:</td>
-                    <td><input type="radio" name="gender value=Male">Male
-                        <input type="radio" name="gender value=Female">Female</td>
+                    <td><input id="m" type="radio" name="gender value=Male">Male
+                        <input id="fm" type="radio" name="gender value=Female">Female</td>
                 </tr>
     
                 <tr>
                     <td>Date of birth:</td>
-                    <td><input type="date" name="dob"></td>
+                    <td><input id="d" type="date" name="dob"></td>
                 </tr>
 
                 <tr>
                     <td>Address:</td>
                     <td>
-                        <textarea row="4" cols="30" name="address"></textarea>
+                        <textarea id="a" row="4" cols="30" name="address"></textarea>
                     </td>
                 </tr>
     
                 <tr>
                     <td>Login password:</td>
-                    <td><input type="password" name="loginpass"></td>
+                    <td><input id="p" type="password" name="loginpass"></td>
                 </tr>
         
             </table>
             <center>
-                <input class="button" type="submit" value="Create">
-                <input class="button" type="reset" value="Reset"></td>
+                <input id="c" class="button" type="submit" value="Create">
+                <input id="r" class="button" type="reset" value="Reset"></td>
             </center>
         </p>  
         </form>
@@ -151,5 +151,26 @@
             <h4>Email: &nbsp;<a href="mailto:2004wxr@gmail.com">2004wxr@gmail.com</a></h4>
             <h4>WhatsApp: &nbsp;+6011-374 5526</h4>
         </footer>
+
+        <script>
+            const response = confirm("Click OK to fill in the form .");
+            
+            console.log(response); 
+            
+            if (response) {
+            
+            } else {
+            document.getElementById("f").disabled = true;
+            document.getElementById("l").disabled = true;
+            document.getElementById("e").disabled = true;
+            document.getElementById("m").disabled = true;
+            document.getElementById("fm").disabled = true;
+            document.getElementById("d").disabled = true;
+            document.getElementById("a").disabled = true;
+            document.getElementById("p").disabled = true;
+            document.getElementById("c").disabled = true;
+            document.getElementById("r").disabled = true;
+            }
+        </script>
     </body>
 </html>
