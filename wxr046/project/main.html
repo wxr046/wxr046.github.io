@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <title>assignment</title>
+        <link rel=icon href=https://cdn-icons-png.flaticon.com/512/79/79628.png  type=image/png>
+        <meta name="viewport" content=width=device-width,initial-scale=1.0>
+        <meta charset="UTF-8">
+        <style>
+            #menuForm{
+                float:right;
+            }
+
+            
+            
+               
+            header {
+                background-color: #3f3f3f; 
+                color: #f1f1f1; 
+                height:10%; 
+            
+            }
+
+
+            header a {
+                display: inline-block;
+                background-color: #f1f1f1;
+                color: #3f3f3f; 
+                padding:5px 10px; 
+                text-decoration: none;
+                border-radius: 10px; 
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            header a:hover {
+                background-color: aquamarine; 
+                color: #f1f1f1; 
+            }
+
+            footer{
+                background-color: #3f3f3f; 
+                color: #f1f1f1; 
+                padding: 20px; 
+            }
+
+
+            
+
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+                }
+
+            .sidebar{
+                position: fixed;
+                top: 0%; 
+                left: 0;
+                width: 0;
+                height: 100%; 
+                z-index: 2;
+                background-color:#cfcfcf; 
+                color: #fff; 
+                padding: 20px; 
+                transition: width 0.3s;
+                
+            }
+            .buttonC{
+                background-color: white;
+                color:3f3f3f;
+                left:10%;
+                width:10%;
+                height:3%;
+                border-color: grey;
+            }
+            .m{
+                border:1px solid grey ;
+                padding:10px;
+                background-color: #f1f1f1;       
+            }
+            .img{
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                height: 20%;
+            }
+            
+        </style>
+    </head>
+
+    <body bgcolor="#f1f1f1"> 
+        
+        
+        <header>
+            
+
+            <form id="menuForm" action="" method="post">
+                
+                <select id="menu" name="Menu">
+                <option value="ca">Cassette</option>
+                <option value="cd">CD</option>
+                <option value="vi">Vinyl</option>
+
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+            
+            <div class="sidebar"  style="display:none" id="mySidebar">
+                <button onclick="w3_close()" class="buttonC"> &times; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <br><br><br>
+                <div class="m">
+                    <a href="login.html">Login</a>
+                </div> 
+                <div class="m">
+                    <a href="">Cart</a>
+                </div>
+                <div class="m">
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+              </div>
+    
+              <div >
+                <button class="buttonO" onclick="w3_open()">☰</button>
+                
+            </div>
+            
+            <h1 align="center">Welcome to Our Books Store</h1>
+            
+        </header>
+              
+            <br>
+            <div class="slider-container">
+                <div class="slider">
+                    <img class="img" src="https://www.books2door.com/cdn/shop/files/B2D2586PercyJackson5Books-Box-Thumbnail_800x600.jpg?v=1692971146.jpg" alt="Image 1">
+                    <img class="img" src="https://www.books2door.com/cdn/shop/products/9-14-percy-jackson-5-books-ages-9-14-paperback-rick-riordan-1.jpg?v=1692956621" alt="Image 2">
+                    <img class="img" src="https://www.books2door.com/cdn/shop/products/9-14-percy-jackson-5-books-ages-9-14-paperback-rick-riordan-2_800x600.jpg?v=1692956621.jpg" alt="Image 3">
+                    <img class="img" src="https://www.books2door.com/cdn/shop/products/9-14-percy-jackson-5-books-ages-9-14-paperback-rick-riordan-3_800x600.jpg?v=1692956621" alt="Image 4">
+                </div>
+            </div>
+            <br>
+        
+        <footer>
+            <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+            <h3>Our Email: <a href="mailto:2004wxr@gmail.com">Email</a></h3>
+        </footer>
+        
+
+        <script>
+            document.getElementById("menuForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                var sElement = document.getElementById("menu");
+                var sValue = sElement.value;
+    
+                if (sValue === "ca") {
+                    window.location.href = "cassette.html"; 
+                } else if (sValue === "cd") {
+                    window.location.href = "cd.html"; 
+                } else if (sValue === "vi") {
+                    window.location.href = "vinyl.html"; 
+                }
+            }
+            );
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.width = "30%";
+                document.getElementById("mySidebar").style.display = "block";
+                }
+
+                function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                }
+
+                document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".slider");
+            const images = slider.querySelectorAll("img");
+            let currentIndex = 0;
+
+            // Function to show the current image
+            function showImage(index) {
+                // Hide all images
+                images.forEach((img) => img.style.display = "none");
+                // Show the current image
+                images[index].style.display = "block";
+            }
+
+            // Function to show the next image
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            }
+
+            // Initialize with the first image
+            showImage(currentIndex);
+
+            // Set an interval to automatically show the next image every 3 seconds
+            setInterval(nextImage, 2000);
+        });
+
+        </script>
+        
+
+    </body>
+
+</html>
