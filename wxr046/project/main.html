@@ -94,7 +94,7 @@
                 
             }
             .slider{
-                width:605;
+                width:400px;
                 height:auto;
                 margin-left: auto;
                 margin-right: auto;
@@ -107,7 +107,9 @@
                 .img2, .lb{
                     width: 50%;
                 }
-
+                .slider{
+                    width: 80%;
+                }
             }
         </style>
     </head>
@@ -130,7 +132,7 @@
             </form>
             
             <div class="sidebar"  style="display:none" id="mySidebar">
-                <button onclick="w3_close()" class="buttonC"> &times; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <button onclick="close()" class="buttonC"> &times; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                 <br><br><br>
                 <div class="m">
                     <a href="https://wxr046.github.io/wxr046/project/login.html"><img class="icon" src="https://cdn-icons-png.flaticon.com/128/2321/2321232.png">&nbsp;Log In</a>
@@ -142,11 +144,11 @@
               </div>
     
               <div >
-                <button class="buttonO" onclick="w3_open()">☰</button>
+                <button class="buttonO" onclick="open()">☰</button>
                 
             </div>
             
-            <h1 align="center">Record Store</h1>
+            <h1 align="center">Echo Record</h1>
             
         </header>
               
@@ -233,12 +235,12 @@
             }
             );
 
-            function w3_open() {
+            function open() {
                 document.getElementById("mySidebar").style.width = "30%";
                 document.getElementById("mySidebar").style.display = "block";
                 }
 
-                function w3_close() {
+                function close() {
                 document.getElementById("mySidebar").style.display = "none";
                 }
 
@@ -247,24 +249,24 @@
             const images = slider.querySelectorAll("img");
             let currentIndex = 0;
 
-            // Function to show the current image
+
             function showImage(index) {
-                // Hide all images
+
                 images.forEach((img) => img.style.display = "none");
-                // Show the current image
+
                 images[index].style.display = "block";
             }
 
-            // Function to show the next image
+            
             function nextImage() {
                 currentIndex = (currentIndex + 1) % images.length;
                 showImage(currentIndex);
             }
 
-            // Initialize with the first image
+            
             showImage(currentIndex);
 
-            // Set an interval to automatically show the next image every 3 seconds
+        
             setInterval(nextImage, 2000);
         });
 
