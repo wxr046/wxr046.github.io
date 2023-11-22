@@ -11,8 +11,14 @@
                 width:80%;
                 padding:3px;
             }
+            .t2{
+                padding: 5%;         
+            }
             .a{
                 color:red;
+            }
+            textarea{
+                width:100%;
             }
             
         </style>
@@ -38,10 +44,17 @@
                 </tr>
 
                 <tr>
+                    <td>Email address :</td>
+                    <td><input type="email"></td>
+                    <td>IC No. :</td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
                     <td>Course</td>
                     <td>
                         <select>
-                            <option value="">value</option>
+                            <option value="">-List of Courses</option>
                         </select>
                     </td>
                     <td>D.O.B</td>
@@ -50,7 +63,7 @@
             </table>
             <br>
 
-            <table>
+            <table >
                 <tr>
                     <td><a href="">Question</a></td>
                     <td></td>
@@ -62,35 +75,35 @@
                 </tr>
 
                 <tr>
-                    <td>1. Have you</td>
-                    <td><input type="radio" name="q1" value="YES">YES <br>
+                    <td>1. Have you grapsed the content of the Website Design so far?</td>
+                    <td class="t2"><input type="radio" name="q1" value="YES">YES <br>
                     <input type="radio" name="q1" value="NO">NO</td>
                 </tr>
-
+                
                 <tr>
-                    <td>2. Can you</td>
-                    <td><input type="radio" name="q2" value="YES">YES <br>
+                    <td>2. Can you now create a simple but interactive website?</td>
+                    <td class="t2"><input type="radio" name="q2" value="YES">YES <br>
                     <input type="radio" name="q2" value="NO">NO</td>
                 </tr>
 
                 <tr>
-                    <td>3. What have you</td>
-                    <td>
+                    <td>3. What have you learned so far?</td>
+                    <td class="t2">
                         <input type="checkbox" name="q3" value="knowledge">Knowledge <br>
-                        <input type="checkbox" name="q3" value="Pratical">Pratical <br>
-                        <input type="checkbox" name="q3" value="Problem">Problem<br>
-                        <input type="checkbox" name="q3" value="Self"> Self<br>
+                        <input type="checkbox" name="q3" value="Pratical">Pratical Skills<br>
+                        <input type="checkbox" name="q3" value="Problem">Problem Solving<br>
+                        <input type="checkbox" name="q3" value="Self"> Self-Exploration Skills<br>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>4. Wish</td>
+                    <td>4. Wish items / suggestions<sup class="a">*</sup></td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <textarea rows="10" cols="100"></textarea>
+                        <textarea rows="5" cols="100"></textarea>
                     </td>
                 </tr>
             </table>
