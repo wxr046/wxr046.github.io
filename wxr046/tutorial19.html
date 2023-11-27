@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <title>tutorial 19</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/79/79628.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            select{
+                color:rgb(237, 227, 201);
+                background-color: black;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <select id="menu" onchange="subjectList()">
+            <option name="DCS INTAKE">INTAKE</option>
+            <option name="DCS INTAKE" value="SEM6">DCS INTAKE JAN 2022</option>
+            <option name="DCS INTAKE" value="SEM5">DCS INTAKE APR 2022</option>
+            <option name="DCS INTAKE" value="SEM4">DCS INTAKE SEP 2022</option>
+            <option name="DCS INTAKE" value="SEM3">DCS INTAKE JAN 2022</option>
+            <option name="DCS INTAKE" value="SEM2">DCS INTAKE APR 2022</option>
+            <option name="DCS INTAKE" value="SEM1">DCS INTAKE SEP 2022</option>
+        </select>
+        
+        <select>
+            <option>Choose Subject</option>
+            <option name="subject" id="MPU2113" style="display: none;">MPU2113</option>
+            <option name="subject" id="MPU2323" style="display: none;">MPU2323</option>
+            <option name="subject" id="MPU2432" style="display: none;">MPU2432</option>
+            <option name="subject" id="LGE1102" style="display: none;">LGE1102</option>
+            <option name="subject" id="SKL5002" style="display: none;">SKL5002</option>
+            <option name="subject" id="MST2003" style="display: none;">MST2003</option>
+            <option name="subject" id="DCS1003" style="display: none;">DCS1103</option>
+            <option name="subject" id="DCS1103" style="display: none;">DCS1103</option>
+            <option name="subject" id="DCS2003" style="display: none;">DCS2003</option>
+            <option name="subject" id="DCS2103" style="display: none;">DCS2103</option>
+            <option name="subject" id="DCS2113" style="display: none;">DCS2113</option>
+            <option name="subject" id="DCS2203" style="display: none;">DCS2203</option>
+            <option name="subject" id="DCS3003" style="display: none;">DCS3003</option>
+            <option name="subject" id="DCS3203" style="display: none;">DCS3203</option>
+            <option name="subject" id="DCS4003" style="display: none;">DCS4003</option>
+            <option name="subject" id="DCS4203" style="display: none;">DCS4203</option>
+            <option name="subject" id="DCS5103" style="display: none;">DCS5103</option>
+            <option name="subject" id="DCS5303" style="display: none;">DCS5303</option>
+            <option name="subject" id="DCS5503" style="display: none;">DCS5503</option>
+            <option name="subject" id="DCS5604" style="display: none;">DCS5604</option>
+            
+        </select>
+            
+        <script>
+            function subjectList(){
+                var sElement = document.getElementById("menu");
+                var sValue = sElement.value;
+                var optionElem = document.getElementById("1sem6");
+
+                if (sValue == "SEM6") {
+                    document.getElementById("DCS5303").style.display = "block"; 
+                    document.getElementById("DCS5103").style.display = "block"; 
+                    document.getElementById("SKL5002").style.display = "block"; 
+                    document.getElementById("MPU2432").style.display = "block"; 
+                    document.getElementById("DCS5604").style.display = "block";
+
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2323").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("MST2003").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2003").style.display = "none"; 
+                    document.getElementById("DCS2103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS2203").style.display = "none"; 
+                    document.getElementById("DCS3003").style.display = "none"; 
+                    document.getElementById("DCS3203").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS4203").style.display = "none"; 
+                    document.getElementById("DCS5503").style.display = "none"; 
+                    
+                } 
+                else if(sValue=="SEM5"){
+                    document.getElementById("DCS5303").style.display = "block";
+                    document.getElementById("DCS4003").style.display = "block";
+                    document.getElementById("DCS5503").style.display = "block";
+                    document.getElementById("SKL5002").style.display = "block";
+                    document.getElementById("MPU2432").style.display = "block";
+                    document.getElementById("DCS4203").style.display = "block";
+
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2323").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("MST2003").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2003").style.display = "none"; 
+                    document.getElementById("DCS2103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS2203").style.display = "none"; 
+                    document.getElementById("DCS3003").style.display = "none"; 
+                    document.getElementById("DCS3203").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                    
+                }
+                else if(sValue=="SEM4"){
+                    document.getElementById("DCS5303").style.display = "block";
+                    document.getElementById("DCS2003").style.display = "block";
+                    document.getElementById("DCS2103").style.display = "block";
+                    document.getElementById("DCS3203").style.display = "block";
+                    document.getElementById("DCS5503").style.display = "block";
+                    document.getElementById("DCS4203").style.display = "block";
+                    document.getElementById("MPU2323").style.display = "block";
+
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2432").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("SKL5002").style.display = "none"; 
+                    document.getElementById("MST2003").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS2203").style.display = "none"; 
+                    document.getElementById("DCS3003").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                        }
+                else if(sValue=="SEM3"){
+                    document.getElementById("DCS2203").style.display = "block";
+                    document.getElementById("DCS2003").style.display = "block";
+                    document.getElementById("DCS2103").style.display = "block";
+                    document.getElementById("DCS3203").style.display = "block";
+                    document.getElementById("DCS4203").style.display = "block";
+                    document.getElementById("MPU2323").style.display = "block";
+
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2432").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("SKL5002").style.display = "none"; 
+                    document.getElementById("MST2003").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS3003").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5303").style.display = "none"; 
+                    document.getElementById("DCS5503").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                }
+                else if(sValue=="SEM2"){
+                    document.getElementById("DCS2203").style.display = "block";
+                    document.getElementById("DCS2003").style.display = "block";
+                    document.getElementById("DCS3003").style.display = "block";
+                    document.getElementById("MST2003").style.display = "block";
+                    document.getElementById("DCS3203").style.display = "block";
+                    document.getElementById("DCS4203").style.display = "block";
+
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2323").style.display = "none"; 
+                    document.getElementById("MPU2432").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("SKL5002").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5303").style.display = "none"; 
+                    document.getElementById("DCS5503").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                }
+                else if(sValue=="SEM1"){
+                    document.getElementById("DCS3003").style.display = "block";
+                    document.getElementById("MST2003").style.display = "block";
+                    document.getElementById("LGE1102").style.display = "block";
+                    document.getElementById("DCS1003").style.display = "block";
+                    document.getElementById("DCS1103").style.display = "block";
+                    document.getElementById("MPU2113").style.display = "block";
+
+                    document.getElementById("MPU2323").style.display = "none"; 
+                    document.getElementById("MPU2432").style.display = "none"; 
+                    document.getElementById("SKL5002").style.display = "none"; 
+                    document.getElementById("DCS2003").style.display = "none"; 
+                    document.getElementById("DCS2103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS2203").style.display = "none"; 
+                    document.getElementById("DCS3203").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS4203").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5303").style.display = "none"; 
+                    document.getElementById("DCS5503").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                }
+                
+                else {
+                    document.getElementById("MPU2113").style.display = "none"; 
+                    document.getElementById("MPU2323").style.display = "none"; 
+                    document.getElementById("MPU2432").style.display = "none"; 
+                    document.getElementById("LGE1102").style.display = "none"; 
+                    document.getElementById("SKL5002").style.display = "none"; 
+                    document.getElementById("MST2003").style.display = "none"; 
+                    document.getElementById("DCS1003").style.display = "none"; 
+                    document.getElementById("DCS1103").style.display = "none"; 
+                    document.getElementById("DCS2003").style.display = "none"; 
+                    document.getElementById("DCS2103").style.display = "none"; 
+                    document.getElementById("DCS2113").style.display = "none"; 
+                    document.getElementById("DCS2203").style.display = "none"; 
+                    document.getElementById("DCS3003").style.display = "none"; 
+                    document.getElementById("DCS3203").style.display = "none"; 
+                    document.getElementById("DCS4003").style.display = "none"; 
+                    document.getElementById("DCS4203").style.display = "none"; 
+                    document.getElementById("DCS5103").style.display = "none"; 
+                    document.getElementById("DCS5303").style.display = "none"; 
+                    document.getElementById("DCS5503").style.display = "none"; 
+                    document.getElementById("DCS5604").style.display = "none"; 
+                }
+            }
+        </script>
+    </body>
+</html>
