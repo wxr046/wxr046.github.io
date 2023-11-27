@@ -7,13 +7,14 @@
             select,input{
                 color:rgb(237, 227, 201);
                 background-color: black;
+                height:2.5%;
             }
             
         </style>
     </head>
 
     <body>
-        <form>
+        
         <select id="menu" onchange="subjectList() ">
             <option name="DCS INTAKE" value="intake">INTAKE</option>
             <option name="DCS INTAKE" value="SEM6">DCS INTAKE JAN 2022</option>
@@ -25,10 +26,10 @@
         </select>
         
         <select id="subject">
-            <option>Choose Subject</option>
+            <option value="cSubject">Choose Subject</option>
             <option name="subject" id="MPU2113" style="display: none;">MPU2113</option>
             <option name="subject" id="MPU2323" style="display: none;">MPU2323</option>
-            <option name="subject" value="cSubject" id="MPU2432" style="display: none;">MPU2432</option>
+            <option name="subject" id="MPU2432" style="display: none;">MPU2432</option>
             <option name="subject" id="LGE1102" style="display: none;">LGE1102</option>
             <option name="subject" id="SKL5002" style="display: none;">SKL5002</option>
             <option name="subject" id="MST2003" style="display: none;">MST2003</option>
@@ -49,9 +50,11 @@
             
         </select>
 
-        <input type="submit" id="btn"  onclick="message()">
+        <input type="button" id="btn" value="Submit" onclick="message()">
 
-        </form>
+        
+
+        <h3 id="txt">Intake : <br> Subject:</h3>
             
         <script>
             
@@ -61,7 +64,14 @@
                 var sElement = document.getElementById("subject");
                 var sValue = sElement.value;
 
-                document.write("Intake : " + mValue + "<br>" + "Subject: " + sValue); 
+                if(mValue=="intake" || sValue =="cSubject"){
+                    document.getElementById("txt").innerHTML ="Please don't select the default option." 
+                }
+                else{
+                    document.getElementById("txt").innerHTML = "Intake : " + mValue + "<br>" + "Subject: " + sValue;
+                }
+                
+                
                
             }  
 
