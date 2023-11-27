@@ -13,21 +13,22 @@
     </head>
 
     <body>
-        <select id="menu" onchange="subjectList()">
-            <option name="DCS INTAKE">INTAKE</option>
+        <form>
+        <select id="menu" onchange="subjectList() ">
+            <option name="DCS INTAKE" value="intake">INTAKE</option>
             <option name="DCS INTAKE" value="SEM6">DCS INTAKE JAN 2022</option>
             <option name="DCS INTAKE" value="SEM5">DCS INTAKE APR 2022</option>
             <option name="DCS INTAKE" value="SEM4">DCS INTAKE SEP 2022</option>
-            <option name="DCS INTAKE" value="SEM3">DCS INTAKE JAN 2022</option>
-            <option name="DCS INTAKE" value="SEM2">DCS INTAKE APR 2022</option>
-            <option name="DCS INTAKE" value="SEM1">DCS INTAKE SEP 2022</option>
+            <option name="DCS INTAKE" value="SEM3">DCS INTAKE JAN 2023</option>
+            <option name="DCS INTAKE" value="SEM2">DCS INTAKE APR 2023</option>
+            <option name="DCS INTAKE" value="SEM1">DCS INTAKE SEP 2023</option>
         </select>
         
-        <select>
+        <select id="subject">
             <option>Choose Subject</option>
             <option name="subject" id="MPU2113" style="display: none;">MPU2113</option>
             <option name="subject" id="MPU2323" style="display: none;">MPU2323</option>
-            <option name="subject" id="MPU2432" style="display: none;">MPU2432</option>
+            <option name="subject" value="cSubject" id="MPU2432" style="display: none;">MPU2432</option>
             <option name="subject" id="LGE1102" style="display: none;">LGE1102</option>
             <option name="subject" id="SKL5002" style="display: none;">SKL5002</option>
             <option name="subject" id="MST2003" style="display: none;">MST2003</option>
@@ -47,12 +48,28 @@
             <option name="subject" id="DCS5604" style="display: none;">DCS5604</option>
             
         </select>
+
+        <input type="submit" id="btn"  onclick="message()">
+
+        </form>
             
         <script>
+            
+            function message() {
+                var mElement = document.getElementById("menu");
+                var mValue = mElement.value; 
+                var sElement = document.getElementById("subject");
+                var sValue = sElement.value;
+
+                document.writeln("Intake : " + mValue); 
+                document.writeln("Subject: " + sValue); 
+               
+            }  
+
             function subjectList(){
                 var sElement = document.getElementById("menu");
                 var sValue = sElement.value;
-                var optionElem = document.getElementById("1sem6");
+                
 
                 if (sValue == "SEM6") {
                     document.getElementById("DCS5303").style.display = "block"; 
